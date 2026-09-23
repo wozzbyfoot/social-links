@@ -268,6 +268,8 @@
         }
 
 
+        /* Button animation */
+
         .social-link:nth-child(1) {
             animation-delay: 0.65s;
         }
@@ -278,6 +280,10 @@
 
         .social-link:nth-child(3) {
             animation-delay: 0.99s;
+        }
+
+        .social-link:nth-child(4) {
+            animation-delay: 1.16s;
         }
 
 
@@ -351,15 +357,13 @@
 
         .social-link:hover .icon {
 
-            transform:
-                scale(1.12);
+            transform: scale(1.12);
         }
 
 
         .social-link:hover .arrow {
 
-            transform:
-                translateX(5px);
+            transform: translateX(5px);
         }
 
 
@@ -418,17 +422,48 @@
         }
 
 
-        .website .icon {
-
-            color: #ffffff;
-
-        }
-
-
+        .website .icon,
         .website .arrow {
 
             color: #ffffff;
+        }
 
+
+        /* =========================
+           WHATSAPP
+        ========================= */
+
+        .whatsapp {
+
+            background: #ffffff;
+
+            color: #171515;
+
+            border: 2px solid rgba(255, 0, 128, 0.16);
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .whatsapp:hover {
+
+            border-color: #ff0080;
+
+            box-shadow:
+                0 12px 32px rgba(255, 0, 128, 0.16);
+        }
+
+
+        .whatsapp .icon {
+
+            color: #25D366;
+        }
+
+
+        .whatsapp .arrow {
+
+            color: #666666;
         }
 
 
@@ -638,9 +673,7 @@
         @media (max-width: 600px) {
 
             body {
-
-                padding:
-                    30px 15px;
+                padding: 30px 15px;
             }
 
 
@@ -773,6 +806,29 @@
 
                 <span>
                     Wozzby Website
+                </span>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </span>
+
+            </a>
+
+
+            <!-- WHATSAPP -->
+
+            <a
+                class="social-link whatsapp"
+                href="https://wa.me/7025800027"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <span class="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </span>
+
+                <span>
+                    WhatsApp
                 </span>
 
                 <span class="arrow">
